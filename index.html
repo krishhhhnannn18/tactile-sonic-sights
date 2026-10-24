@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tactile Sonic Sights is developing a sensor-enabled haptic neckband to help visually impaired people detect nearby obstacles.">
+<title>Tactile Sonic Sights | Safer Navigation Through Touch</title>
+<style>
+:root{--bg:#0b1110;--panel:#121d1a;--text:#f2f7f4;--muted:#b5c5be;--accent:#a6f06b;--line:#2b4037}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--accent)}.nav a{text-decoration:none;color:var(--muted);margin-left:24px;font-size:.95rem}
+.hero{padding:86px 0 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.04;letter-spacing:-2px;margin:18px 0 22px}h1 em{color:var(--accent);font-style:normal}
+.lead{font-size:1.15rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;text-decoration:none;padding:13px 19px;border-radius:9px;font-weight:750}.primary{background:var(--accent);color:#10200b}.secondary{border:1px solid #557064;color:var(--text)}
+.visual{min-height:350px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 50% 45%,#2a493a 0,#172820 38%,#101916 72%);display:grid;place-items:center;position:relative;overflow:hidden}
+.ring{width:240px;height:240px;border:1px solid #8fdb66;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 70px #8be65b22;position:relative}
+.ring:before,.ring:after{content:"";position:absolute;border:1px solid #8fdb6655;border-radius:50%;inset:22px}.ring:after{inset:48px}
+.device{width:155px;height:72px;border:4px solid #c9d8d0;border-radius:0 0 40px 40px;border-top:0;position:relative;z-index:2}
+.device:before{content:"";position:absolute;top:-6px;left:14px;width:18px;height:18px;border-radius:50%;background:var(--accent);box-shadow:52px 0 var(--accent),104px 0 var(--accent)}
+.ping{position:absolute;background:var(--accent);width:9px;height:9px;border-radius:50%;box-shadow:0 0 18px var(--accent)}.p1{top:24%;left:25%}.p2{right:20%;top:35%}.p3{bottom:23%;left:34%}
+.visual-label{position:absolute;bottom:20px;color:#c5d8cb;font-size:.8rem;letter-spacing:1px}
+section{padding:70px 0}.section-head{max-width:700px;margin-bottom:30px}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0 16px;letter-spacing:-1px}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:25px}.icon{font-size:1.7rem}.card h3{margin:12px 0 7px}.card p{margin:0;color:var(--muted)}
+.problem{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}.callout{border-left:3px solid var(--accent);padding:8px 0 8px 22px;color:var(--muted);font-size:1.05rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border-top:1px solid var(--accent);background:#101815;border-radius:10px}.num{color:var(--accent);font-weight:800;font-size:.9rem}
+.cta{background:linear-gradient(120deg,#1b3025,#111b16);border:1px solid var(--line);border-radius:22px;padding:42px;display:flex;justify-content:space-between;gap:28px;align-items:center}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.hero,.problem{grid-template-columns:1fr}.hero{padding-top:55px}.visual{min-height:290px}.grid,.steps{grid-template-columns:1fr}.nav a{margin-left:10px}.cta{display:block;padding:28px}.nav .links{display:none}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <div class="brand">TACTILE <span>SONIC SIGHTS</span></div>
+  <div class="links"><a href="#challenge">The challenge</a><a href="#approach">Our approach</a><a href="#contact">Collaborate</a></div>
+</header>
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">Accessibility • Assistive technology</div>
+    <h1>Safer navigation.<br><em>Through touch.</em></h1>
+    <p class="lead">We are developing a smart haptic neckband designed to help people with visual impairments become more aware of nearby obstacles—including hazards that may sit above the reach of a traditional white cane.</p>
+    <div class="actions"><a class="btn primary" href="#approach">Explore our approach ↘</a><a class="btn secondary" href="#contact">Partner with us</a></div>
+  </div>
+  <div class="visual" aria-label="Abstract illustration of a sensor-enabled haptic neckband">
+    <span class="ping p1"></span><span class="ping p2"></span><span class="ping p3"></span>
+    <div class="ring"><div class="device"></div></div>
+    <div class="visual-label">SENSE · INTERPRET · ALERT</div>
+  </div>
+</section>
+<section id="challenge" style="background:#0e1613;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+ <div class="wrap problem">
+  <div><div class="eyebrow">The challenge</div><h2>Some obstacles are hard to anticipate.</h2></div>
+  <div class="callout">White canes are valuable mobility aids, but they may not detect every obstacle above waist level. Low branches, projecting signboards, open vehicle doors, and wall-mounted objects can create unexpected hazards in busy public spaces.</div>
+ </div>
+</section>
+<section id="approach" class="wrap">
+ <div class="section-head"><div class="eyebrow">Our proposed approach</div><h2>Environmental awareness, delivered as a tactile cue.</h2><p class="muted">Tactile Sonic Sights combines sensing technologies with vibration-based feedback, aiming to provide useful alerts without adding spoken instructions that could compete with surrounding sounds.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">⌁</div><h3>LiDAR sensing</h3><p>Designed to help map nearby surroundings and identify potential obstacles.</p></article>
+  <article class="card"><div class="icon">◎</div><h3>Ultrasonic detection</h3><p>Provides distance measurements to support awareness of nearby objects.</p></article>
+  <article class="card"><div class="icon">〰</div><h3>Haptic alerts</h3><p>Vibration cues are intended to communicate detected hazards quietly and intuitively.</p></article>
+ </div>
+</section>
+<section style="background:#0e1613;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Development journey</div><h2>Built around real user needs.</h2><p class="muted">Our project direction focuses on practical mobility challenges and the importance of making alerts clear, comfortable, and useful.</p></div>
+  <div class="steps">
+   <div class="step"><div class="num">01 / UNDERSTAND</div><h3>Listen to users</h3><p class="muted">Learn about everyday hazards, preferences, and accessibility needs.</p></div>
+   <div class="step"><div class="num">02 / PROTOTYPE</div><h3>Build and refine</h3><p class="muted">Integrate sensing and haptic feedback, then improve the experience through testing.</p></div>
+   <div class="step"><div class="num">03 / VALIDATE</div><h3>Test responsibly</h3><p class="muted">Evaluate reliability and usability with appropriate supervision and user feedback.</p></div>
+  </div>
+ </div>
+</section>
+<section id="contact" class="wrap">
+ <div class="cta"><div><div class="eyebrow">Get involved</div><h2>Help us make mobility more inclusive.</h2><p class="muted">We welcome mentors, accessibility organisations, researchers, and potential collaborators to help us develop and evaluate the prototype.</p></div><a class="btn primary" href="mailto:YOUR_EMAIL@example.com?subject=Tactile%20Sonic%20Sights%20-%20Collaboration">Contact our team ↗</a></div>
+ <p class="muted" style="font-size:.86rem;margin-top:16px">Prototype in development. This concept is intended to supplement—not replace—a white cane, guide dog, or other established mobility aid. Safety and effectiveness must be validated through testing.</p>
+</section>
+</main>
+<footer class="wrap"><span>© 2026 Tactile Sonic Sights</span><span>Designed for a more accessible world.</span></footer>
+</body>
+</html>
